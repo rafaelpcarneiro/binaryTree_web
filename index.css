@@ -1,0 +1,96 @@
+.btn_add_l {
+    position:  absolute;
+    left: -10px;
+    top: 65%;
+
+}
+
+.btn_add_r {
+    position: absolute;
+    right:-10px;
+    top: 65%;
+}
+
+.ans_yes {
+    position: absolute;
+    top: -20px;
+    left: 39.5%;
+}
+.ans_no {
+    position: absolute;
+    top: -20px;
+    left: 39%;
+}
+
+.question_type {
+    color:white;
+    font-size:15px;
+    height:60px;
+    overflow-x: scroll;
+}
+
+.rootBox {
+    border:solid;
+    border-width: 5px;
+    width:210px;
+    height:80px;
+    position:absolute;
+    margin:0;
+    background-color: rgba(100, 100, 100, 1);
+
+    padding: 12px 5px 10px 12px;
+}
+
+.box {
+    /*border:solid;*/
+    width:210px;
+    height:80px;
+    position:absolute;
+    display: block;
+
+    padding: 20px 5px 10px 12px;
+}
+
+
+#graphFrame {
+    position:relative;
+    height: 500px;
+    width:1200px;
+    border: dashed;
+    border-radius: 2%;
+    border-width: 1px;
+    margin:30px;
+
+    background-image: linear-gradient(
+        to right,
+        rgba(180,180,180, 0.3),
+        rgba(200,200,200, 0.5)
+    );
+}
+
+.aumentar_tela_d {
+    position:absolute;
+    top:0px;
+    right:-62px;
+}
+.aumentar_tela_b {
+    position:absolute;
+    top:100%;
+    left:0px;
+}
+
+
+.broom-clean {
+    position:absolute;
+    right:-20px;
+    top: -20px;
+    font-size: 26px;
+}
+
+.broom-clean:hover {
+    position:absolute;
+    right:-20px;
+    top: -20px;
+    font-size: 36px;
+    cursor: pointer;
+}
