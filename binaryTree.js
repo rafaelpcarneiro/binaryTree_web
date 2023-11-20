@@ -12,15 +12,15 @@ function add_yes_no_btn(innerHTML, left_right) {
   let btn_l, btn_r;
 
   btn_l = `
-                 <button class='btn btn-success ans_yes'>
-                     Sim
-                 </button>
-             `
+      <button class='btn btn-success ans_yes'>
+          Sim
+      </button>
+  `
   btn_r = `
-                 <button class='btn btn-danger ans_no'>
-                     Não
-                 </button>
-             `
+      <button class='btn btn-danger ans_no'>
+          Não
+      </button>
+  `
 
   btn_l = btn_l.trim();
   btn_r = btn_r.trim();
@@ -39,34 +39,34 @@ function add_yes_no_btn(innerHTML, left_right) {
 
 function templateBox(parentId) {
   const template = `
-                 <div class='question_type'>
-                     <ul>
-                         <li>
-                             <a href="#" style='color:white; font-weight:bold'
-                                id='the_question' onclick="ask_question('${parentId}')" >
-                                 Add Pergunta
-                             </a>
-                         </li>
-                         <li>
-                             <a href="#" style='color:white; font-weight:bold'
-                                id='the_type' onclick="ask_type('${parentId}')" >
-                                 Add Tipo
-                             </a>
-                         </li>
-                     </ul>
-                 </div>
+      <div class='question_type'>
+          <ul>
+              <li>
+                  <a href="#" style='color:white; font-weight:bold'
+                    id='the_question' onclick="ask_question('${parentId}')" >
+                      Add Pergunta
+                  </a>
+              </li>
+              <li>
+                  <a href="#" style='color:white; font-weight:bold'
+                    id='the_type' onclick="ask_type('${parentId}')" >
+                      Add Tipo
+                  </a>
+              </li>
+          </ul>
+      </div>
 
-                 <button
-                        class='btn btn-default btn_add_l btn-xs'
-                        onclick="add_box('${parentId}', 'left' )">
-                     +
-                 </button>
-                 <button
-                        class='btn btn-default btn_add_r btn-xs'
-                        onclick="add_box('${parentId}', 'right')">
-                     +
-                 </button>
-             `
+      <button
+            class='btn btn-default btn_add_l btn-xs'
+            onclick="add_box('${parentId}', 'left' )">
+          +
+      </button>
+      <button
+            class='btn btn-default btn_add_r btn-xs'
+            onclick="add_box('${parentId}', 'right')">
+          +
+      </button>
+  `
   return template.trim();
 }
 
@@ -358,11 +358,11 @@ function ask_question(nodeId) {
   )[0];
 
   question_type.innerHTML = `
-                 <span class='broom-clean' onclick="clear_box('${nodeId}')">&#129529</span>
-                 <p>
-                     <strong>Pergunta</strong>:  ${question}
-                 </p>
-             `
+      <span class='broom-clean' onclick="clear_box('${nodeId}')">&#129529</span>
+      <p>
+          <strong>Pergunta</strong>:  ${question}
+      </p>
+  `
 }
 
 function clear_box(nodeId) {
@@ -381,21 +381,21 @@ function clear_box(nodeId) {
   )[0];
 
   question_type.innerHTML = `
-                 <ul>
-                     <li>
-                         <a href="#" style='color:white; font-weight:bold'
-                            id='the_question' onclick="ask_question('${nodeId}')" >
-                             Add Pergunta
-                         </a>
-                     </li>
-                     <li>
-                         <a href="#" style='color:white; font-weight:bold'
-                            id='the_type' onclick="ask_type('${nodeId}')" >
-                             Add Tipo
-                         </a>
-                     </li>
-                 </ul>
-             `
+      <ul>
+          <li>
+              <a href="#" style='color:white; font-weight:bold'
+                id='the_question' onclick="ask_question('${nodeId}')" >
+                  Add Pergunta
+              </a>
+          </li>
+          <li>
+              <a href="#" style='color:white; font-weight:bold'
+                id='the_type' onclick="ask_type('${nodeId}')" >
+                  Add Tipo
+              </a>
+          </li>
+      </ul>
+  `
   //question_type.innerHTML.trim();
 
 }
@@ -416,11 +416,11 @@ function ask_type(nodeId) {
 
 
   question_type.innerHTML = `
-                 <span class='broom-clean' onclick="clear_box('${nodeId}')">&#129529</span>
-                 <p>
-                     <strong>Tipo</strong>:  ${thetype}
-                 </p>
-             `
+      <span class='broom-clean' onclick="clear_box('${nodeId}')">&#129529</span>
+      <p>
+          <strong>Tipo</strong>:  ${thetype}
+      </p>
+  `
 }
 //------------------- END Tree Structure && Boxes ------------------
 
