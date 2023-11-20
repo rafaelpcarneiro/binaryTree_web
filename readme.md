@@ -1,8 +1,12 @@
 # Drawing a responsive Binary Tree with JS
 
-This repository is a result of my work trying to draw a web page, 
-which later is going to feed an REST-API, so a have a binary 
-tree that is build following the need of the user.
+This repository is a result of my work trying to draw a web page
+that displays an interactive diagram, which later is going to feed a 
+REST-API. The only constraint, at the diagram, is that it follows 
+a binary tree. In that way, the html+js of this repo gives the user the 
+possibility of building a tree step by step, and whose content, 
+of each leave, is a text that it is inserted whenever the center 
+of the leaves are clicked.
 
 In order to run this repo there are two dependencies:
 + [_leader-line.min.js_](https://anseki.github.io/leader-line/)
